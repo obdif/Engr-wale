@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing_page{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background: lightblue;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 2rem; */
+    box-sizing: border-box;
+}
+
+.navbar .logo h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: sans-serif ;
+    cursor: pointer;
+}
+
+.logo h2 span{
+    background: crimson;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.navbar .nav_link{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.navbar .nav_link ul{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_link ul li a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.nav_link .sign{
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    float: right;
+}
+
+.nav_link  .dropdown{
+    background: lightblue;
+    display: flex;
+    flex-direction:column;
+    font-weight: 800;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    position: absolute;
+    width: 15rem;
+    padding: 8px;
+    margin-top: 18px;
+    margin-right: -10px;
+    box-sizing: border-box;
+    display: none;
+    /* visibility: hidden; */
+}
+
+.nav_link .services:hover + .dropdown{
+    display: inline-block;
+    visibility: visible;
+    transition: all ease-in-out 2s;
+    transform: translateY(0px);
+}
+
+.sign li a{
+    padding: 7px;
+    border: none;
+    list-style-type: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+    background: crimson;
+    font-size: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.sign li a:hover{
+    background: black;
+    transition: all ease 1s;
+}
+
+/* .hero_page{
+    background: ;   
+} */
